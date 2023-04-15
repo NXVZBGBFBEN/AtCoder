@@ -1,7 +1,7 @@
 # -*- coding:utf-8-unix -*-
 
 [package]
-name = "rust"
+name = "atcoder"
 version = "0.1.0"
 authors = ["NXVZBGB FBEN <NXVZBGBFBEN@gmail.com>"]
 edition = "2018"
