@@ -1,15 +1,15 @@
+use std::vec::Vec;
+use itertools::Itertools;
 use proconio::input;
+use proconio::marker::Chars;
 
 fn main() {
     input! {
         n: usize,
+        s: [[Chars]; n],
     }
-    for i in 3..=9 {
-        if n < 10usize.pow(3) {
-            println!("{}", n);
-            break;
-        } else if 10usize.pow(i) <= n && n < 10usize.pow(i + 1) {
-            println!("{}", n / 10usize.pow(i - 2) * 10usize.pow(i - 2));
-        }
+    let mut long_s: Vec<char> = Vec::new();
+    for c in (0..n).combinations(2) {
+        long_s = [s[c[0]], s[c[1]]].concat();
     }
 }
