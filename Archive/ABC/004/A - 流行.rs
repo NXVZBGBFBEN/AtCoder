@@ -3,6 +3,7 @@ use proconio::{fastout, input};
 #[fastout]
 fn main() {
     input! {
-        _: i32,
+        n: usize,
     }
+    println!("{}", 2 * n);
 }

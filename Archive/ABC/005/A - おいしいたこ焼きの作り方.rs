@@ -3,6 +3,7 @@ use proconio::{fastout, input};
 #[fastout]
 fn main() {
     input! {
-        _: i32,
+        (x, y): (u8, u8),
     }
+    println!("{}", y / x)
 }
