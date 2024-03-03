@@ -1,4 +1,3 @@
-use num_integer::Roots;
 use proconio::marker::Chars;
 use proconio::{fastout, input};
 use std::collections::HashSet;
@@ -7,7 +6,12 @@ use std::iter::FromIterator;
 #[fastout]
 fn main() {
     input! {
-        n: u32,
+        (a, b): (i32, i32)
     }
-    println!("{}", n.cbrt())
+    for i in 0..10 {
+        if a + b != i {
+            println!("{i}");
+            break;
+        }
+    }
 }
